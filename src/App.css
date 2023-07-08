@@ -59,11 +59,11 @@ body {
   color: #fff;
   padding: 0.7rem 1rem;
   font-size: 0.9rem;
-  font-weight: bold;
   border-radius: 2px;
+  border: 3px;
+  font-weight: bold;
   outline: none;
   cursor: pointer;
-  border: 3px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -77,3 +77,61 @@ body {
   transform: scale(0.9);
 }
 
+@media only screen and (max-width: 700px){
+  #text {
+    font-size: 1.5rem;
+  }
+  #author {
+    font-size: 1rem;
+  }
+  #quotes-box {
+    width: 35rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #text {
+    font-size: 1.3rem;
+  }
+  #author {
+    font-size: .8rem;
+  }
+  #quotes-box {
+    width: 30rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #text {
+    font-size: 1.1rem;
+  }
+  #author {
+    font-size: .8rem;
+  }
+  #quotes-box {
+    width: 25rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  #quotes-box {
+    width: 20rem;
+    padding: 2rem;
+  }
+  #new-quote{
+    padding: 0.5rem .8rem;
+    font-size: 0.7rem;
+  }
+  .social-media > a img{
+    width: 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  #quotes-box {
+    width: 18rem;
+  }
+}
