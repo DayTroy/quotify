@@ -6,7 +6,7 @@
  }
  body {
   font-family: 'Poppins', sans-serif;
-  background-color: #000;
+  background-color: #1D1E2C;
  }
 
  #quotes-box{
@@ -41,7 +41,7 @@
 
  .social-media > a {
   margin-right: .5rem;
-  background-color: #000;
+  background-color: #1D1E2C;
   padding: .3rem .5rem;
   cursor: pointer;
   border-radius: 3px;
@@ -56,7 +56,7 @@
  }
 
  #new-quote { 
-  background: #000;
+  background: #1D1E2C;
   border: none;
   color: #fff;
   padding: .7rem 1rem;
