@@ -3,7 +3,6 @@ import axios from "axios";
 import twitterIcon from "../assets/icons/twitter.svg";
 import tumblrIcon from "../assets/icons/tumblr.svg";
 import colors from "../utils/colors";
-import src from "../utils/quotes_db";
 import "./Quotes.css"
 
 const Quotes = () => {
