@@ -2,34 +2,15 @@ import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import twitterIcon from "../assets/icons/twitter.svg";
 import tumblrIcon from "../assets/icons/tumblr.svg";
-
-const colors = [
-  "#191923",
-  "#0E79B2",
-  "#BF1363",
-  "#F39237",
-  "#64B6AC",
-  "#DB5461",
-  "#3B3355",
-  "#1D1E2C",
-  "#9C528B",
-  "#A1CDA8",
-  "#F3A712",
-  "#DB2B39",
-  "#534D41",
-  "#F0CEA0",
-];
+import colors from "../utils/colors";
+import src from "../utils/quotes_db";
+import "./Quotes.css"
 
 const Quotes = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   const [color, setColor] = useState();
-
   const [isColorChanged, setIsColorChanged] = useState(false);
-
-  const src =
-    "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
-
   const quoteRef = useRef(null);
   const authorRef = useRef(null);
 
