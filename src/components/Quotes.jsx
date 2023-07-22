@@ -27,16 +27,17 @@ const Quotes = () => {
     }
   }, [isColorChanged]);
 
-  const getQuote = () => {
-    axios
-      .get(src)
-      .then(({ data: { quotes } }) => {
-        let randomNumber = Math.floor(Math.random() * quotes.length);
-        let randomQuote = quotes[randomNumber];
-        setQuote(randomQuote.quote);
-        setAuthor(randomQuote.author);
-      })
-      .catch((error) => console.log(error));
+  const getQuote = async () => {
+    try {
+      const response = await axios.get(src);
+      const { quotes } = response.data;
+      let randomNumber = Math.floor(Math.random() * quotes.length);
+      let randomQuote = quotes[randomNumber];
+      setQuote(randomQuote.quote);
+      setAuthor(randomQuote.author);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const handleClick = () => {
