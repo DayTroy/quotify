@@ -21,4 +21,4 @@ npm run dev
 
 • Vite: A fast and minimalist build tool for modern web development. It offers a lightning-fast dev server, instant hot module replacement (HMR), and optimized production builds.
 
-• Netlify: A fully-integrated platform for frontend developers to deploy and scale modern web applications
+• Netlify: A fully-integrated platform for frontend developers to deploy and scale modern web applications.
