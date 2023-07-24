@@ -20,4 +20,5 @@ npm run dev
 • Axios: A promise-based HTTP client for making API requests from the browser or Node.js. It simplifies the process of sending asynchronous HTTP requests and handling responses.
 
 • Vite: A fast and minimalist build tool for modern web development. It offers a lightning-fast dev server, instant hot module replacement (HMR), and optimized production builds.
-    
+
+• Netlify: A fully-integrated platform for frontend developers to deploy and scale modern web applications
